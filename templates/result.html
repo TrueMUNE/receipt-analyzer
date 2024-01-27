@@ -1,0 +1,24 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Analysis Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Receipt Analysis Result</h1>
+        <div class="result-content">
+            <p>Text from the receipt: <br>{{ result_text }}</p>
+            <p>Environmental Impact: {{ environmental_impact }} units</p>
+        </div>
+        <div class="button-container">
+            <a href="/" class="button">Go Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
+
